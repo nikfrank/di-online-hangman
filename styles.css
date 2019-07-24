@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+}
+
+.puzzle-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.puzzle {
+  width: 70vw;
+}
+
+.puzzle span {
+  width: 30px;
+  display: inline-block;
+  height: 50px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid black;
+  margin: 3px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.puzzle span.space {
+  border-bottom: none;
+}
+
+.buttons {
+  width: calc(100vw - 120px);
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  margin: 5px;
+}
+
+.next-puzzle-container {
+  padding: 60px;
+  width: calc(100vw - 120px);
+  display: flex;
+  justify-content: space-around;
+}
