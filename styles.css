@@ -2,8 +2,50 @@ body {
   margin: 0;
 }
 
+.game-container {
+  display: flex;
+}
+
+.gallow svg {
+  height: 30vh;
+}
+
+.gallow.mistakes-0 .head,
+.gallow.mistakes-0 .neck,
+.gallow.mistakes-0 .body,
+.gallow.mistakes-0 .arm,
+.gallow.mistakes-0 .leg {
+  display: none;
+}
+
+.gallow.mistakes-1 .neck,
+.gallow.mistakes-1 .body,
+.gallow.mistakes-1 .arm,
+.gallow.mistakes-1 .leg {
+  display: none;
+}
+
+.gallow.mistakes-2 .body,
+.gallow.mistakes-2 .arm,
+.gallow.mistakes-2 .leg {
+  display: none;
+}
+
+.gallow.mistakes-3 .arm,
+.gallow.mistakes-3 .leg {
+  display: none;
+}
+
+.gallow.mistakes-4 .leg {
+  display: none;
+}
+
+.gallow.mistakes-6 .head {
+  fill: blue;
+}
+
 .puzzle-container {
-  width: 100vw;
+  width: calc(100vw - 30vh);
   display: flex;
   justify-content: center;
 }
@@ -27,6 +69,14 @@ body {
   border-bottom: none;
 }
 
+.bad-letters {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px black;
+}
+
 .buttons {
   width: calc(100vw - 120px);
   display: flex;
@@ -44,4 +94,30 @@ body {
   width: calc(100vw - 120px);
   display: flex;
   justify-content: space-around;
+}
+
+.lose-message {
+  position: fixed;
+  top: 20px;
+  left: 40vw;
+  right: 40vw;
+  padding: 10px;
+  border-radius: 3px;
+
+  background-color: red;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.win-message {
+  position: fixed;
+  top: 20px;
+  left: 30vw;
+  right: 30vw;
+  padding: 10px;
+  border-radius: 3px;
+
+  background-color: green;
+  font-size: 2rem;
+  text-decoration: underline;
 }
